@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Pulicharla Teja — DevOps Engineer portfolio & resume" />
+  <title>Pulicharla Teja — DevOps Engineer</title>
+
+  <style>
+    :root{
+      --accent:#0b76ef;
+      --muted:#6b7280;
+      --bg:#0f1724;
+      --card:#0b1220;
+      --glass: rgba(255,255,255,0.03);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      color:#e6eef8;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      min-height:100vh;
+      background: linear-gradient(180deg,#071029 0%, #071827 60%);
+      -webkit-font-smoothing:antialiased;
+      display:flex;
+      justify-content:center;
+      padding:28px;
+    }
+    .wrap{
+      width:100%;
+      max-width:1000px;
+    }
+    .hero{
+      display:flex;
+      gap:20px;
+      align-items:center;
+      padding:26px;
+      border-radius:14px;
+      background: linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+    }
+    .avatar{
+      width:110px;height:110px;border-radius:16px;
+      background:linear-gradient(135deg,var(--accent),#7dd3fc);
+      display:flex;align-items:center;justify-content:center;
+      font-weight:800;font-size:36px;color:#042045;
+      flex:0 0 110px;
+    }
+    .hero-text{flex:1;min-width:0}
+    h1{margin:0;font-size:1.6rem}
+    .title{color:var(--muted);margin-top:6px}
+    .contacts{margin-top:12px;color:var(--muted);display:flex;gap:12px;flex-wrap:wrap;font-size:0.95rem}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+
+    .main{
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:20px;
+      margin-top:18px;
+    }
+    @media(max-width:940px){
+      .main{grid-template-columns:1fr;}
+    }
+
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;padding:18px;color:var(--accent);
+      box-shadow:0 6px 20px rgba(2,6,23,0.5);
+    }
+    .section-title{color:#cfe9ff;font-weight:700;margin-bottom:8px}
+    .muted{color:var(--muted); font-size:0.95rem}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .tag{background: rgba(255,255,255,0.03);padding:8px 10px;border-radius:999px;font-size:0.9rem;color:#bfe1ff}
+
+    /* Timeline */
+    .timeline{position:relative;padding-left:18px}
+    .timeline::before{
+      content:"";position:absolute;left:6px;top:0;bottom:0;width:2px;background:linear-gradient(#0b76ef,#7dd3fc);
+      border-radius:2px;
+    }
+    .entry{position:relative;padding:14px 12px 14px 26px;margin-bottom:12px;border-radius:8px;background:rgba(255,255,255,0.01)}
+    .dot{position:absolute;left:-2px;top:18px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px rgba(11,118,239,0.6)}
+    .entry h3{margin:0;color:#eaf6ff}
+    .entry .meta{color:var(--muted);font-size:0.9rem;margin-top:6px}
+    ul{margin:8px 0 0 18px;color:#dbeefd}
+    li{margin-bottom:6px;line-height:1.45}
+
+    .section-small{color:#dfeefe;font-size:0.95rem}
+    footer{margin-top:16px;color:var(--muted);text-align:center;font-size:0.9rem}
+    .btn{
+      display:inline-block;padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#6fd3f7);
+      color:#042045;font-weight:700;text-decoration:none;margin-top:10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero" role="banner">
+      <div class="avatar" aria-hidden="true">PT</div>
+      <div class="hero-text">
+        <h1>Pulicharla Teja</h1>
+        <div class="title">DevOps Engineer • Infrastructure Automation Specialist</div>
+
+        <div class="contacts">
+          <div>📍 Hyderabad, India</div>
+          <div>✉️ <a href="mailto:pulicharalateja7@gmail.com">pulicharalateja7@gmail.com</a></div>
+          <div>📞 +91 93813 96608</div>
+          <div>🔗 <a href="https://github.com/your-github" target="_blank" rel="noopener">github.com/your-github</a></div>
+          <div>🔗 <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" rel="noopener">linkedin.com/in/your-linkedin</a></div>
+        </div>
+
+        <a class="btn" href="/resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+      </div>
+    </header>
+
+    <div class="main" role="main">
+      <!-- Left (primary) -->
+      <div>
+        <section class="card" aria-labelledby="summary">
+          <div id="summary" class="section-title">Summary</div>
+          <div class="muted" style="color:#dbeefd">
+            Experienced DevOps/SRE Engineer with over 4 years of hands-on experience in build management, deployment and automation. Skilled in troubleshooting complex issues, optimizing workflows, and ensuring system reliability. Adept at collaborating with cross-functional teams to enhance delivery efficiency and maintain high service availability.
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="experience" style="margin-top:14px">
+          <div id="experience" class="section-title">Experience (Timeline)</div>
+          <div class="timeline" aria-hidden="false">
+            <!-- Entry: Project 2 - Current -->
+            <div class="entry">
+              <div class="dot" aria-hidden="true"></div>
+              <h3>DevOps Engineer — Dec 2022 – Present</h3>
+              <div class="meta">Environment: AWS, Docker, Kubernetes, GitHub, Terraform, Grafana, Linux, Ansible, Jenkins (Basic), GitLab CI/CD</div>
+              <ul>
+                <li>Containerized & orchestrated microservices using Docker & Kubernetes to improve scalability and deployment consistency.</li>
+                <li>Worked on infrastructure automation with Terraform & Ansible to reduce manual provisioning and configuration drift.</li>
+                <li>Configured CI/CD pipelines (Jenkins, GitHub Actions) and optimized build automation under guidance.</li>
+                <li>Managed AWS resources (EC2, S3, IAM, CloudWatch) for performance, cost control, and security compliance.</li>
+                <li>Setup Prometheus & Grafana dashboards for monitoring, alerting and observability.</li>
+                <li>Implemented automation scripts (Shell) and an AWS Lambda to prune unused EBS snapshots reducing costs.</li>
+              </ul>
+            </div>
+
+            <!-- Entry: Project 1 -->
+            <div class="entry">
+              <div class="dot" aria-hidden="true"></div>
+              <h3>DevOps Engineer — Apr 2022 – Dec 2022</h3>
+              <div class="meta">Environment: GitLab CI/CD, Ansible, Linux, AWS, JIRA, Git</div>
+              <ul>
+                <li>Supported deployments using GitLab CI/CD and Ansible Tower; assisted in release & maintenance activities.</li>
+                <li>Monitored application & server health; performed log analysis and basic troubleshooting.</li>
+                <li>Worked on Linux administration tasks and AWS support (EC2, CloudWatch, S3 artifacts).</li>
+                <li>Tracked incidents & change requests in JIRA and collaborated with QA and development teams.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="projects" style="margin-top:14px">
+          <div id="projects" class="section-title">Projects & Key Contributions</div>
+          <div class="section-small">
+            <ul>
+              <li>Implemented centralized logging & alerting systems to reduce MTTR and improve visibility.</li>
+              <li>Automated repeated operational tasks with shell scripts saving release time and effort.</li>
+              <li>Contributed to process improvements across DevOps/SRE practices, improving release reliability.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="card" aria-labelledby="awards" style="margin-top:14px">
+          <div id="awards" class="section-title">Awards & Recognition</div>
+          <div class="section-small" style="color:#dbeefd">
+            <ul>
+              <li>Star of the Month (Dec 2023) — for exceptional delivery in high-pressure production deployments</li>
+              <li>Spotlight Award (2024) — for automation initiatives reducing weekend release efforts by 5+ hours</li>
+              <li>Best Team Player Award (2023)</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right (sidebar) -->
+      <aside>
+        <div class="card" aria-labelledby="skills">
+          <div id="skills" class="section-title">Skills</div>
+          <div class="skills">
+            <span class="tag">AWS (EC2, S3, IAM)</span>
+            <span class="tag">Docker</span>
+            <span class="tag">Kubernetes (concepts)</span>
+            <span class="tag">Terraform (basic)</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">Git / GitLab / GitHub</span>
+            <span class="tag">Jenkins / GitHub Actions</span>
+            <span class="tag">Grafana / Prometheus</span>
+            <span class="tag">Shell Scripting</span>
+            <span class="tag">RHEL / CentOS / Ubuntu</span>
+            <span class="tag">WebSphere / Tomcat</span>
+          </div>
+        </div>
+
+        <div class="card" aria-labelledby="certs" style="margin-top:12px">
+          <div id="certs" class="section-title">Certifications</div>
+          <div class="muted" style="color:#dbeefd">
+            <ul>
+              <li>AWS DevOps Engineer — Professional (Validation: dd55cff6...)</li>
+              <!-- remove or edit validation id if you don't want it public -->
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" aria-labelledby="education" style="margin-top:12px">
+          <div id="education" class="section-title">Education</div>
+          <div class="muted" style="color:#dbeefd">
+            Bachelor of Technology in Mechanical Engineering — Sri Vahini Institute of Technologies and Sciences (2021)
+          </div>
+        </div>
+
+        <div class="card" aria-labelledby="contact" style="margin-top:12px">
+          <div id="contact" class="section-title">Contact</div>
+          <div class="muted" style="color:#dbeefd">
+            Email: <a href="mailto:pulicharalateja7@gmail.com">pulicharalateja7@gmail.com</a><br>
+            Phone: +91 93813 96608
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      © <span id="yr"></span> Pulicharla Teja — Built with DevOps ❤️
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
